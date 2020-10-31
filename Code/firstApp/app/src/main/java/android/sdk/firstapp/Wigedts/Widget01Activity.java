@@ -2,6 +2,7 @@ package android.sdk.firstapp.Wigedts;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.sdk.firstapp.R;
 import android.view.View;
@@ -22,7 +23,11 @@ public class Widget01Activity extends AppCompatActivity {
         changeTextBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                text.setText("Button Changed the Text");
+//                text.setText("Button Changed the Text");
+                Intent intent = new Intent(Widget01Activity.this,Widget02Activity.class);
+                intent.putExtra("text","This is Text Passed From Activities");
+                startActivity(intent);
+                finish();
             }
         });
     }
