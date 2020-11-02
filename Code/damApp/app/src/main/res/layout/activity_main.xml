@@ -8,64 +8,6 @@
     android:gravity="center"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:id="@+id/main_donor_btn"
-                android:layout_width="162dp"
-                android:layout_height="123dp"
-                android:background="@drawable/ic_main_btn1" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Donor"
-                android:textColor="#3F51B5"
-                android:textSize="22sp"
-                android:textStyle="bold"
-                android:layout_marginTop="85dp"
-                android:layout_marginStart="51dp"
-                android:layout_alignTop="@+id/main_donor_btn"/>
-
-        </RelativeLayout>
-
-        <View
-            android:layout_width="20dp"
-            android:layout_height="match_parent"/>
-
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:id="@+id/main_receiver_btn"
-                android:layout_width="162dp"
-                android:layout_height="123dp"
-                android:background="@drawable/ic_main_btn2" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Receiver"
-                android:textColor="#EC1414"
-                android:textSize="22sp"
-                android:textStyle="bold"
-                android:layout_marginTop="85dp"
-                android:layout_marginStart="35dp"
-                android:layout_alignTop="@+id/main_receiver_btn"/>
-
-        </RelativeLayout>
-
-
-
-    </LinearLayout>
 
 </LinearLayout>

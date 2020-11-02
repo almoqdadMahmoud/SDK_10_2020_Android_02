@@ -20,7 +20,7 @@ public class Splash extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                startActivity(new Intent(getApplicationContext(),SelectTypeActivity.class));
                 finish();
             }
         },SPLASH_DELAY_TIME );
