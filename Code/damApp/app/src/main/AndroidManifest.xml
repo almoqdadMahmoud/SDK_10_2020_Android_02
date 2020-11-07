@@ -9,11 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DamApp">
-        <activity android:name=".SelectTypeActivity"></activity>
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".ReceiverActivity" />
-        <activity android:name=".DonorActivity" />
+        <activity android:name=".HomeActivity"></activity>
+        <activity android:name=".LoginAndRegister.PreLoginActivity" />
+        <activity android:name=".SelectTypeActivity" />
+        <activity android:name=".LoginAndRegister.RegisterActivity" />
+        <activity android:name=".LoginAndRegister.LoginActivity" />
         <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

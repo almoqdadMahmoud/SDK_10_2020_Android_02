@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.sdk.damapp.SelectTypeActivity;
 
+import java.util.HashMap;
+
 public class SessionManger {
 
     // Shared Preferences
@@ -36,6 +38,22 @@ public class SessionManger {
         editor_user.putString(KEY_EMAIL,email);
         editor_user.putString(KEY_PHONE,phone);
         editor_user.apply();
+    }
+
+    public HashMap<String,String> getUserDetails(){
+        HashMap<String,String> user = new HashMap<String, String>();
+        user.put(KEY_NAME,perf_user.getString(KEY_NAME,null));
+        user.put(KEY_EMAIL,perf_user.getString(KEY_EMAIL,null));
+        user.put(KEY_PHONE,perf_user.getString(KEY_PHONE,null));
+        return  user;
+    }
+
+    public void logoutUser(){
+        editor_user.clear();
+        editor_user.commit();
+        Intent intent = new Intent(_context,SelectTypeActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        _context.startActivity(intent);
     }
 
 
