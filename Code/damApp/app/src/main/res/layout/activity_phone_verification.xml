@@ -25,7 +25,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
         android:orientation="vertical">
 
         <TextView
@@ -34,6 +33,7 @@
             android:layout_height="wrap_content"
             android:text="Enter your Code"
             android:textSize="15sp"
+            android:layout_marginStart="30dp"
             android:textColor="#4666A6"
             android:padding="10dp" />
 
