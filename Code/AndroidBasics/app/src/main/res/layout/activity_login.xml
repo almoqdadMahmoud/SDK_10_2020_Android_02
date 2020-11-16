@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Activities.LoginForm.LoginActivity">
+
+    <ImageView
+        android:id="@+id/login_form_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_login_logo"
+        android:layout_margin="20dp"/>
+
+    <EditText
+        android:id="@+id/login_form_user_email"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:drawablePadding="10dp"
+        android:hint="Your Email Address"
+        android:layout_margin="5dp"/>
+
+    <EditText
+        android:id="@+id/login_form_user_password"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberPassword"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:hint="Your Password"
+        android:drawablePadding="10dp"
+        android:layout_margin="5dp"/>
+
+    <Button
+        android:id="@+id/login_form_login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_margin="5dp"
+        android:textStyle="bold|italic"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:gravity="bottom">
+
+        <TextView
+            android:id="@+id/login_form_do_not_have_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Do not Have Account ? "
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/login_form_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textColor="@color/purple_500"
+            android:textStyle="bold"
+            android:textSize="19sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
