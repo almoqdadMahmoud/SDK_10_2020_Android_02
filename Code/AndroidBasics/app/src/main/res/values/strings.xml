@@ -3,4 +3,15 @@
     <string name="intent_one">Intent One Activity</string>
     <string name="intent_two">Intent Two Activity</string>
     <string name="menu_activity">Menu Activity</string>
+    <string name="country">الدولة</string>
+    <string name="countries">الدول</string>
+
+    <string-array name="countries_array">
+        <item>اختر الدولة</item>
+        <item>الاردن</item>
+        <item>سوريا</item>
+        <item>العراق</item>
+        <item>السعودية</item>
+        <item>تركيا</item>
+    </string-array>
 </resources>
