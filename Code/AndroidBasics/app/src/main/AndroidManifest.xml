@@ -9,6 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidBasics">
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"></activity>
         <activity android:name=".Activities.AndroidControls.ControlOneActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,13 +19,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activities.LoginForm.LoginActivity">
-        </activity>
+        <activity android:name=".Activities.LoginForm.LoginActivity"></activity>
         <activity android:name=".Activities.Menu.MenuActivity" />
         <activity android:name=".Main2Activity" />
         <activity android:name=".Activities.Intents.IntentTwoActivity" />
         <activity android:name=".Activities.Intents.IntentOneActivity" />
-        <activity android:name=".Activities.MainActivity"></activity>
+        <activity android:name=".Activities.MainActivity" />
     </application>
 
 </manifest>

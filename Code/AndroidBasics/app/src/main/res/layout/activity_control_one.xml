@@ -43,8 +43,19 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@drawable/linear_border">
 
+        <TextView
+            android:id="@+id/text_view_headline_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/countries_res"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp20" />
 
         <Spinner
             android:id="@+id/spinner_counties_2"
@@ -55,15 +66,40 @@
             android:backgroundTint="@color/purple_500"
             android:backgroundTintMode="multiply"/>
 
+
+
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@drawable/linear_border">
+
         <TextView
-            android:id="@+id/text_view_headline_2"
+            android:id="@+id/text_view_headline_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="@string/countries"
+            android:text="@string/cities_res"
             android:textColor="@color/black"
             android:textSize="@dimen/sp20" />
+
+        <Spinner
+            android:id="@+id/spinner_cities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/Widget.AppCompat.Spinner"
+            android:backgroundTint="@color/purple_500"
+            android:backgroundTintMode="multiply"/>
+
+
 
     </LinearLayout>
 
@@ -71,14 +107,36 @@
         android:layout_width="match_parent"
         android:layout_height="20dp"/>
 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:background="@drawable/linear_border">
 
     <TextView
-        android:id="@+id/text_fill_from_spinner"
+        android:id="@+id/text_fill_from_spinner_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_weight="0.50"
         android:layout_gravity="center"
         android:textSize="@dimen/sp20"
         android:textStyle="bold"
+        android:padding="10dp"
         android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/text_fill_from_spinner_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.50"
+        android:layout_gravity="center"
+        android:textSize="@dimen/sp20"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textColor="@color/black"/>
+
+</LinearLayout>
+
 
 </LinearLayout>
